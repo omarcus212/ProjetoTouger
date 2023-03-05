@@ -1,0 +1,53 @@
+.upPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+
+    span{
+        display: flex;
+        justify-content: end;
+        align-items: start;
+        gap: 10px;
+        height: 90%;
+    }
+
+    .logo{
+        width: 15%;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        border-right: 1px #000 solid;
+        
+        
+
+        img{
+            width: 80%;
+            height: 60%;
+        }
+    }
+
+    .title{
+        width: 70%;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        padding: 20px;
+
+        font: 2em sans-serif;
+        font-weight: 600;
+    }
+
+    .icon_up{
+        width: 10%;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+
+        svg{
+            width: 80%;
+            height: 30%;
+            cursor: pointer;
+        }
+    }
+}

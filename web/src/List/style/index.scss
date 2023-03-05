@@ -1,0 +1,281 @@
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#main_home{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .up_home_container{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+       
+
+        .blue_line{
+            width: 95%;
+            height: 20px;
+            background-color: #2581C4;
+            color: #2581C4;
+            border-right: 1px solid #2581C4;
+        }
+    }
+    
+    .listAll_home_container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        flex-direction: column;
+
+        .all_container_user{
+             width: 90%;
+             height: 18rem;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+
+             .name_link{
+                width: 100%;
+                height: 7%;
+                font: 1em sans-serif;
+                display: flex;
+                justify-content: flex-end;
+                align-items: end;
+                padding-right: 10px;
+                gap:10px;
+                
+             }
+                   
+             .container_user_off{
+                width: 100%;
+                height: 18rem;
+                border: 7px #8f8f8f solid;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding: 5px;
+                color: #535353;
+                
+                .foto{
+                    width: 20%;
+                    height: 95%;
+                    background-color: #535353;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 40%;
+         
+                    img{
+                     display: flex;
+                     width: 100%;
+                     height: 100%;
+                     justify-content: center;
+                     align-items: center;
+                    }
+         
+                   }
+         
+         
+                   .two_div_dice_list{
+                        width: 50%;
+                        height: 90%;
+                    
+                        gap: 30px;
+                         display: flex;
+                         flex-direction: column;
+         
+                         .big_name{
+                             width: 100%;
+                             height: auto;
+                            
+         
+                             h3{
+                                 font-size: 2rem;
+                                 color: #535353;
+                                 font-family: sans-serif;
+                             }
+                         }
+                         
+                         .container_dice{
+                             width: 100%;
+                             height: 90%;
+                             display: flex;
+                             gap: 10%;
+                             justify-content: start;
+                             align-items: center;
+                           
+         
+                             span{
+                                 width: auto;
+                                 height: auto;
+                                 display: flex;
+                                 flex-direction: column;
+                                 gap: 17px;
+                                
+         
+                                 p{
+                                     color: #474747;
+                                     font: 1.1em sans-serif;
+                                 }
+                                 
+                             }
+                         }
+         
+                         .container_dice span:last-child{
+                             width: auto;
+                             height: 90%;
+                              margin-right: 2%;
+                           
+                         }
+                   }
+         
+                   .three_div_resume{
+                     width: 40%;
+                     height: 90%;
+                     justify-content: center;
+                     align-items: center;
+                    
+         
+                     h3{
+                         display: flex;
+                         width: 100%;
+                         height: 100%;
+                         font-family: sans-serif;
+                         font-size: clamp(0.6rem, 1vw, 0.8rem); 
+                         justify-content: center;
+                         align-items: center;
+                         text-align: start;
+                         word-break: break-all;
+                         word-wrap: wrap;
+                         color: #474747;
+                     }
+                   }
+        
+             }
+
+             .container_user{
+                width: 100%;
+                min-height: 98%;
+                border: 7px #2581C4 solid;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding: 5px;
+                height: inherit;
+     
+                .foto{
+                width: 20%;
+                height: 95%;
+                background-color: #535353;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+     
+                img{
+                 display: flex;
+                 width: 100%;
+                 height: 100%;
+                }
+     
+               }
+     
+     
+               .two_div_dice_list{
+                    width: 50%;
+                    height: 90%;
+                
+                    gap: 30px;
+                     display: flex;
+                     flex-direction: column;
+     
+                     .big_name{
+                         width: 100%;
+                         height: auto;
+                        
+     
+                         h3{
+                             font-size: 2rem;
+                             color: #474747;
+                             font-family: sans-serif;
+                         }
+                     }
+                     
+                     .container_dice{
+                         width: 100%;
+                         height: 90%;
+                         display: flex;
+                         gap: 10%;
+                         justify-content: start;
+                         align-items: center;
+                       
+     
+                         span{
+                             width: auto;
+                             height: auto;
+                             display: flex;
+                             flex-direction: column;
+                             gap: 17px;
+                            
+     
+                             p{
+                                 color: #474747;
+                                 font: 1.1em sans-serif;
+                             }
+                             
+                         }
+                     }
+     
+                     .container_dice span:last-child{
+                         width: auto;
+                         height: 90%;
+                          margin-right: 2%;
+                       
+                     }
+               }
+     
+               .three_div_resume{
+                 width: 40%;
+                 height: 90%;
+                 justify-content: center;
+                 align-items: center;
+                
+     
+                 h3{
+                     display: flex;
+                     width: 100%;
+                     height: 100%;
+                     font-family: sans-serif;
+                     font-size: clamp(0.6rem, 1vw, 0.8rem); 
+                     justify-content: center;
+                     align-items: center;
+                     text-align: start;
+                     word-break: break-all;
+                     word-wrap: wrap;
+                     color: #474747;
+                 }
+               }
+             }
+        }
+       
+    }
+
+
+
+    
+}
