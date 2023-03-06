@@ -194,7 +194,7 @@
                         font: 1em sans-serif;
 
                       img{
-                        width: 75%;
+                        width: 80%;
                         height: 70%;
                       }
 
@@ -230,23 +230,55 @@
                         height: 30px;
                         border: 1px solid rgb(216, 216, 216);
                         background-color: #ebebeb;
+
+                       
+                    }
+
+                    .P_option{
+                        width: 80%;
+                        height: 30px;
+                        border: 1px solid rgb(216, 216, 216);
+                        background-color: #ebebeb;
                     }
                 }
             }
 
             .curriculo_pdf {
-                width: 50%;
+                width: 80%;
                 height: 50%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                gap: 20px;
+               
 
                 input{
                     display: flex;
                     flex-direction: column;
                     font: 1.2em sans-serif;
+                   
+                    
+                }
+
+                button{
+                    width: 100px;
+                    height: 30px;
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font: 1.2em sans-serif;
+                
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                   
+                }
+
+                button:hover{
+                    transition: 40ms;
+                    background-color: #2582c4b6;
+                    color: #fff;
                 }
 
                 svg{
@@ -367,3 +399,34 @@
 
 
 }
+
+
+
+
+
+@media(max-height: 1400px) {
+     .container_inputs{
+        display: flex;
+        .all_div {
+            width: 60%;
+            font: 0.7em sans-serif;
+
+            input {
+                width: 40%;
+                height: 30px;
+                border: 1px solid rgb(216, 216, 216);
+                background-color: #ebebeb;
+                margin-bottom: 10px;
+            }
+        }
+       
+     }
+    }
+  
+  
+  
+  
+  
+    @media(max-width: 800px) {
+      
+     }

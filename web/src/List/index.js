@@ -19,43 +19,45 @@ const Listuser = () => {
     const docRef = collection(db, "users");
 
     const DownloadCv = () => {
-        console.log('teste')
+        
     }
  
   
 
- // const creatUser = async () =>{
-  //   const newUser =  await addDoc(docRef,{nome:'fabio',})
-  //     if(newUser){
-  //       alert('sucesso')
-  //     } 
-  // }
+//   const creatUser = async () =>{
+//      const newUser =  await addDoc(docRef,{'dados':'dados'})
+//        if(newUser){
+//          alert('sucesso')
+//        } 
+//    }
+
+   
 
     const delet = async (id) => {
-        if (window.confirm('Tem certeza que deseja excluir?')) {
+const valite = window.confirm('Tem certeza que deseja excluir?')
+
+        if (valite == true) {
             const userid = doc(db, "users", id);
-            await deleteDoc(userid);
+            const teste = await deleteDoc(userid);
+          console.log(teste)
+            
 
         } else {
 
             console.log('resgiter not fall')
         }
-
+             
+        window.location.reload();
     }
 
     const ativarCv = async (id) => {
-
-       
-    
 
           const userdoc = doc(db, "users", id);
           const updatedice = await { ativo: cancel }
 
          console.log(id,cancel)
          await updateDoc(userdoc, updatedice);
-         
-
-        
+          
           
     }
 
@@ -71,7 +73,8 @@ const Listuser = () => {
 
 
     }, [cancel]);
-
+   
+    
 
     return (
         <main id="main_home">
@@ -83,12 +86,13 @@ const Listuser = () => {
             <section className="listAll_home_container">
 
                 {
+                    
                     users.map((user) => {
                         return (
                             <div className="all_container_user" key={user.id}>
                                 <span className="name_link">
-                                    <Link to={`Register/${user.id}`}> Editar </Link>
-                                    <p><a href="" target="_blank" onClick={() => { delet(user.id) }}>Excluir</a></p>
+                                    <Link to={`Register/${user.id}`} > Editar </Link>
+                                    <p><a href="" target={'_blank'}  onClick={() => { delet(user.id) }}>Excluir</a></p>
                                 </span>
 
                                 <div className={user.ativo == true ? "container_user" : "container_user_off"}>
